@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project4.mainScreenController">
+   <left>
+      <TreeView fx:id="treeView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <TableView fx:id="tableView" prefHeight="324.0" prefWidth="400.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="63.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnInsert" mnemonicParsing="false" onAction="#insertData" prefHeight="10.0" prefWidth="200.0" text="Insert">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#updateData" prefHeight="10.0" prefWidth="200.0" text="Update">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#deleteData" prefHeight="10.0" prefWidth="200.0" text="Delete">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
